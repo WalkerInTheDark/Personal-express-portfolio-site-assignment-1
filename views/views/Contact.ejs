@@ -1,0 +1,62 @@
+<%-include partials/header.ejs%>
+<%-include partials/main_nav.ejs%>
+  
+<!-- <link rel="icon" href="/MyLogo.png" type="image/icon type"> -->
+<!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
+
+ <link rel="icon" type="image/x-icon" href="/MyLogo.png"> 
+  
+<br>
+ <h1>&nbsp;<%= title %></h1>
+  <br>
+
+  <!-- my contacts-->
+<center><p id="contact-me-anch">Contact me using the following details: <br><br>My email: <strong>eshabalk@my.centennialcollege.ca</strong></b> <br><p>or</p></p></center>
+
+  <!-- contact form-->
+<div class="contact-form">
+   <form action="/" autocomplete="off">
+     <h3 class="title">Send me a massage</h3>
+      <div class="input-container">
+       <input type="text" name="fname" placeholder="First name" id="fname" class="input" />
+         <label for="fname"></label>
+     </div>
+     <div class="input-container">
+      <input type="text" name="lname" placeholder="Last name" id="lname" class="input" />
+     </div>
+      <div class="input-container">
+       <input type="email" placeholder="E-mail" name="email" id="email" class="input" />
+      </div>
+     <div class="input-container">
+       <input type="tel" placeholder="+1xxxxxxxxxx" pattern="[+,0-9]{3}[0-9]{4}[0-9]{5}" name="phone" id="phone" class="input" />
+     </div>
+      <div class="input-container textarea">
+       <textarea name="message" placeholder="Message" id="msg" class="input"></textarea>
+      </div>
+     <input onclick="sConsole();"  type="submit" value="Send" class="btn"/>
+   </form>
+ </div>
+  </div>
+   </div>
+<br>
+  <br>
+
+  <!-- parse user input from contact form and display it in console -->
+<script>function sConsole() {
+   console.log("Form user input");
+    console.log("---------------");
+   var data = document.getElementById("fname");
+    console.log("Name: " + data.value);
+   var data2 = document.getElementById("lname");
+    console.log("Name: " + data2.value);
+   var data3 = document.getElementById("email");
+    console.log("E-mail: " + data3.value);
+   var data4 = document.getElementById("phone");
+    console.log("Phone: " + data4.value);
+   var data5 = document.getElementById("msg");
+    console.log("Message: " + data5.value);
+ }</script>
+
+   <%-include partials/bottom_nav.ejs%>
+<%-include partials/footer.ejs%>   
+

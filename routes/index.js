@@ -1,3 +1,5 @@
+/* index.js, Egor, Student # 301179880, 10/15/2022 */
+
 var express = require('express');
 var router = express.Router();
 
@@ -9,6 +11,7 @@ router.get('/', function(req, res, next) {
   );
 });
 
+/* diff routers */
 router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });

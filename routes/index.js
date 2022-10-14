@@ -28,7 +28,7 @@ router.get('/services', function(req, res, next) {
 });
 
 router.get('/skills', function(req, res, next) {
-  res.render('skills', { title: 'Skills' });
+  res.render('skills.ejs', { title: 'Skills' });
 });
 
 router.get('/Contact', function(req, res, next) {
